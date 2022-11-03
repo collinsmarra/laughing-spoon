@@ -8,6 +8,7 @@ fn main(){
     let mut body = String::new();
 
     println!("What would you like your title to be?");
+
     stdin().read_line(&mut title).unwrap();
     let title = title.trim_end();
 

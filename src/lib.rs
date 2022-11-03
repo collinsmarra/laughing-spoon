@@ -28,9 +28,6 @@ pub fn establich_connection() -> PgConnection{
         .unwrap_or_else(|_| panic!("Error connecting to {}", database_uri))
 }
 
-
-
-
 pub fn create_post(conn: &mut PgConnection, title: &str, body: &str) -> Post{
 
     use crate::schemas::posts;
